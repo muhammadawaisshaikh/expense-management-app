@@ -1,0 +1,81 @@
+<div class="header py-3">
+    <div class="container">
+        <div class="toggleContainer" (click)="toggleMenu()" [ngClass]="{'change': toggleButton}">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-lg-3">
+                <div class="logo">
+                    <a class="text-default" routerLink="/dashboard">Expense App</a>
+                </div>
+            </div>
+
+            <div class="col-9">
+                <div class="nav">
+                    <ul>
+                        <li><a class="text-uppercase" routerLink="/dashboard">Home</a></li>
+
+                        <div class="dropdown">
+                            <button class="dropbtn text-uppercase">Accounts</button>
+                            <div class="dropdown-content">
+                                <a routerLink="accounts/account-addedit">Add Edit</a>
+                                <a routerLink="accounts/account-listing">Accounts</a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown">
+                            <button class="dropbtn text-uppercase">Expense</button>
+                            <div class="dropdown-content">
+                                <a routerLink="expense/expense-add-edit">Add Edit</a>
+                                <a routerLink="expense/expense-listing">Expenses</a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown">
+                            <button class="dropbtn text-uppercase">Reports</button>
+                            <div class="dropdown-content">
+                                <a routerLink="reports/expense-report">Expense Report</a>
+                            </div>
+                        </div>
+
+                        <li><a class="text-uppercase" routerLink="/contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="sidebar side" [ngClass]="{'show': sidebar}">
+    <ul>
+        <li><a (click)="toggleMenu()" routerLink="/dashboard">Homepage</a></li>
+
+        <li><a (click)="toggleMenu()" routerLink="/accounts">Accounts</a></li>
+        <ol type="square">
+            <li><a (click)="toggleMenu()" routerLink="accounts/account-addedit">Add Edit</a></li>
+            <li><a (click)="toggleMenu()" routerLink="accounts/account-listing">Accounts</a></li>
+        </ol>
+
+        <li><a (click)="toggleMenu()" routerLink="/expense">Expense</a></li>
+        <ol type="square">
+            <li><a (click)="toggleMenu()" routerLink="expense/expense-add-edit">Add Edit</a></li>
+            <li><a (click)="toggleMenu()" routerLink="expense/expense-listing">Expenses</a></li>
+        </ol>
+
+        <li><a (click)="toggleMenu()" routerLink="/reports">Reports</a></li>
+        <ol type="square">
+            <li><a (click)="toggleMenu()" routerLink="reports/expense-report">Expense Report</a></li>
+        </ol>
+
+        <li><a (click)="toggleMenu()" routerLink="/contact">Contact Us</a></li>
+
+        <div class="bottom-thing">
+            <a href="tel:+923310337182"><i class="fas fa-question-circle"></i> Need Help ?</a>
+        </div>
+    </ul>
+</div>
+
+<div class="fade-area" [ngClass]="{'show': fadeSection}" (click)="toggleMenu()"></div>
