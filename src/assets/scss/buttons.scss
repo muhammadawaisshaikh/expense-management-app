@@ -1,22 +1,27 @@
-.c-btn {
-  padding: 10px 30px;
-  color: #fff;
-  border: 0;
-  font-size: 16px;
-  cursor: pointer;
-  font-weight: 500;
-  border-radius: 7px;
-  // text-transform: uppercase;
-  text-align: center;
-  &.green {
-    background: $greenGradient;
-    box-shadow: 0 5px 12px 0 rgb(68 202 65 / 35%);
+.c-btn{
+  // margin-top: 15px;
+  padding: 0;
+  .press{
+    padding: 9px 25px;
+    color: #fff;
+    border: 0;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    &.green {
+      background: $greenGradient;
+    }
+    &.pink {
+      background: $default;
+    }
   }
-  &.pink {
-    background: $default;
-    box-shadow: 0 5px 12px 0 rgb(245 40 110 / 35%);
-  }
-  i {
-    margin-right: 7px;
-  }
+}
+
+.small-chip{
+  background: $default;
+  color: $white;
+  font-size: 12px;
+  padding: 5px 15px;
+  border-radius: 20px;
 }

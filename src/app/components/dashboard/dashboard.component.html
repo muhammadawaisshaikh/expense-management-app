@@ -1,1 +1,90 @@
-<p>dashboard!</p>
+<section>
+    <div class="slider">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-7">
+                    <div class="heading">
+                        <h1>Expense App For Business</h1>
+                        <h6>MANAGE ALL YOUR BUSINESS</h6>
+                        <div class="c-btn">
+                            <a class="press pink">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-5">
+                    <div class="image">
+                        <img src="../../../assets/img/slider-img1.png">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="services">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12">
+                    <div class="main">
+                        <h3>Expense Services</h3>
+                        <p>To Businesses</p>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="services-inner">
+                        <div class="row">
+
+                            <div class="col-4" *ngFor="let item of data">
+                                <div class="cards">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="icon">
+                                                <img src={{item.image}}>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-9">
+                                            <div class="names">
+                                                <h5>{{item.name}}</h5>
+                                                <p>{{item.text}}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="download">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-8">
+                    <h5>Expense App, Download Now!</h5>
+                </div>
+
+                <div class="col-4">
+                    <div class="btns">
+                        <a href="https://www.apple.com/app-store/"><img src="../../../assets/img/download1.png"></a>
+                        <a href="https://play.google.com/"><img src="../../../assets/img/download2.png"></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
