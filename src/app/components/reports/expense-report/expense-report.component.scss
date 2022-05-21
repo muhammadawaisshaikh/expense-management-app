@@ -1,0 +1,28 @@
+@import '../../../../styles.scss';
+
+.report{
+    padding: 3.125rem 0;
+    .report-inner{
+        margin-top: 2.5rem;
+        label{
+            font-size: 15px;
+            font-weight: 500;
+        }
+        .c-btn{
+            margin-top: 2.5rem;
+            float: right;
+            .press{
+                padding: 10px 35px;
+                a {
+                    letter-spacing: .1px;
+                }
+            }
+        }
+    }
+    .table{
+        margin-top: 1.875rem;
+        a{
+            cursor: pointer;
+        }
+    }
+}
