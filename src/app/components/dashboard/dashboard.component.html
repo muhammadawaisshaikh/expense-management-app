@@ -44,7 +44,7 @@
                                 <div class="cards">
                                     <div class="row">
                                         <div class="col-3">
-                                            <div class="icon">
+                                            <div class="image">
                                                 <img src={{item.image}}>
                                             </div>
                                         </div>
@@ -120,6 +120,162 @@
 
                         </div>
                     </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="choose">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-7">
+                    <div class="main">
+                        <h3>Why Choose Us</h3>
+                        <p>Expense App is the only Application in the market, available for both businesses & customers
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="choose-inner">
+                    <div class="row">
+
+                        <div class="col-4" *ngFor="let item of features">
+                            <div class="wrapper">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="image">
+                                            <img src={{item.image}}>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-8">
+                                        <div class="names">
+                                            <h5>{{item.name}}</h5>
+                                            <p>{{item.text}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="testimonies">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-8">
+                    <div class="main">
+                        <h3>Testimonials</h3>
+                        <p>With clients in over 100 cities, Expense App is the must-have indian resource for anybody
+                            involved in handling money. Browse below to see what our clients have to say about us.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonies-inner">
+                <div class="row">
+                    <div class="col-12 col-md-4 col-lg-4" *ngFor="let item of review">
+                        <div class="plain-card">
+                            <p class="testimonies-text">{{item.text}}</p>
+                            <div class="inner">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src={{item.image}}>
+                                    </div>
+
+                                    <div class="col-9">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <h6>{{item.name}}</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="contact">
+        <div class="container">
+            <div class="row justify-content-center">
+
+                <div class="col-12">
+                    <div class="main">
+                        <h3>Contact Us</h3>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-10">
+                    <form class="mt-5">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="form-group">
+                                    <input type="name" class="form-control" placeholder="First Name">
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="form-group">
+                                    <input type="name" class="form-control" placeholder="Last Name">
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Company">
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Subject">
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="form-group">
+                                    <input type="number" class="form-control" placeholder="Phone Number">
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <textarea type="text" class="form-control" placeholder="Message"
+                                        rows="5"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="c-btn mt-3">
+                                    <a class="press pink">Send Message</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
 
             </div>

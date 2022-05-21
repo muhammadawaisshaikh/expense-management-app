@@ -9,6 +9,9 @@ export class DashboardComponent implements OnInit {
 
   data: any = [];
   cards: any = [];
+  features: any = [];
+  review: any = [];
+
 
   constructor() { }
 
@@ -72,6 +75,85 @@ export class DashboardComponent implements OnInit {
         text: 'Track your account status on phone convenient safe easy to use',
       }
     ]
+
+    this.features =[
+      {
+        id: 1,
+        image: '../../../assets/img/choose1.png',
+        name: 'Unlimited Database',
+        text: 'Businesses can accommodate a very vast amount of data.',
+      },
+      {
+        id: 2,
+        image: '../../../assets/img/choose2.png',
+        name: 'Bill Storage Facility',
+        text: 'Take photo of bill and upload it in your phone.',
+      },
+      {
+        id: 3,
+        image: '../../../assets/img/choose3.png',
+        name: 'SMS facility',
+        text: 'Message customer to inform the credit/debit details.',
+      },
+      {
+        id: 4,
+        image: '../../../assets/img/choose4.png',
+        name: 'Data Analytics',
+        text: 'Data Analytics gives you a Competitive Advantage.',
+      },
+      {
+        id: 5,
+        image: '../../../assets/img/choose5.png',
+        name: 'Daily/Monthly Reports',
+        text: 'Easier to identify changes in trends, strategic long term forecasting.',
+      },
+      {
+        id: 6,
+        image: '../../../assets/img/choose6.png',
+        name: 'Safe & Backed Up',
+        text: 'All the data in cloud - Safe, Secure, Confidential.',
+      }
+    ]
+
+    this.review =[
+      {
+        id: 1,
+        text: 'Expense App is brilliant for my business and it actually matters. Its truly a one-stop thing for maintaining my Expense app.',
+        image: './assets/img/man.jpg',
+        name: 'Muhammad Yaseen',
+      },
+      {
+        id: 2,
+        text: 'We can never get transparency, insight and support for our money we get. Khata is an invaluable tool for us.',
+        image: './assets/img/girl1.jpg',
+        name: 'Fatima Qayoom',
+      },
+      {
+        id: 3,
+        text: 'The Expense app is so simple to use, and after a month I’ve already saved so much money.',
+        image: './assets/img/man.jpg',
+        name: 'Ayub Shaikh',
+      },
+      {
+        id: 4,
+        text: 'It’s a great way to remind customer to pay back their Udhaar. I also won free dinner at BurgerLab.',
+        image: './assets/img/man.jpg',
+        name: 'Farooq Ahmed',
+      },
+      {
+        id: 5,
+        text: 'Dropped chai in my udhaar register. Thank you Udhaar Boook for saving my ledger',
+        image: './assets/img/man.jpg',
+        name: 'Abdul Jabbar',
+      },
+      {
+        id: 6,
+        text: 'The Udhaar app is so simple to use, and after a month I’ve already saved so much money',
+        image: './assets/img/man.jpg',
+        name: 'Zain Abdullah',
+      },
+    ]
+
   }
 
 }
