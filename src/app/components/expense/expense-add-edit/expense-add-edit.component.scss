@@ -1,0 +1,21 @@
+@import '../../../../styles.scss';
+
+.expense{
+    padding: 3.125rem 0;
+    .expense-inner{
+        margin-top: 2.5rem;
+        label{
+            font-size: 15px;
+            font-weight: 500;
+        }
+        .c-btn{
+            display: block;
+            margin: auto;
+            margin-top: 30px;
+            a {
+                letter-spacing: .1px;
+                margin-right: 10px;
+            }
+        }
+    }
+}
