@@ -25,7 +25,7 @@
 </section>
 
 <section>
-    <div class="services">
+    <div class="services-business">
         <div class="container">
             <div class="row">
 
@@ -81,6 +81,44 @@
                     <div class="btns">
                         <a href="https://www.apple.com/app-store/"><img src="../../../assets/img/download1.png"></a>
                         <a href="https://play.google.com/"><img src="../../../assets/img/download2.png"></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="services-customer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12">
+                    <div class="main">
+                        <h3>Expense Services</h3>
+                        <p>To Customer</p>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="services-inner">
+                        <div class="row">
+
+                            <div class="col-4" *ngFor="let item of cards">
+                                <div class="card">
+                                    <div class="image">
+                                        <img src={{item.image}}>
+                                    </div>
+
+                                    <div class="names">
+                                        <h5>{{item.name}}</h5>
+                                        <p>{{item.text}}</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
 

@@ -1,0 +1,11 @@
+@import '../../../../styles.scss';
+
+.expense{
+    padding: 3.125rem 0;
+    .table{
+        margin-top: 2.5rem;
+        a{
+            cursor: pointer;
+        }
+    }
+}

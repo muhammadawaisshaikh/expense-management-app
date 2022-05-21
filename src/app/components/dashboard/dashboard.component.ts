@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class DashboardComponent implements OnInit {
 
   data: any = [];
+  cards: any = [];
 
   constructor() { }
 
@@ -48,6 +49,27 @@ export class DashboardComponent implements OnInit {
         image: '../../../assets/img/service6.png',
         name: 'Remark writing facility',
         text: 'You can write details of the transactions.',
+      }
+    ]
+
+    this.cards =[
+      {
+        id: 1,
+        image: '../../../assets/img/service7.png',
+        name: 'View Transactions',
+        text: 'Check your credit & debit history in the cloud.',
+      },
+      {
+        id: 2,
+        image: '../../../assets/img/service8.png',
+        name: 'Data Tracking',
+        text: 'Track your transaction records view Expense details on the move',
+      },
+      {
+        id: 3,
+        image: '../../../assets/img/service9.png',
+        name: 'Account Status Tracking',
+        text: 'Track your account status on phone convenient safe easy to use',
       }
     ]
   }
